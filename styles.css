@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+#title {
+  font-size: 7rem;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#title span {
+  font-size: 3rem;
+}
+
+.set .drum {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  padding: 40px;
+  margin: 10px;
+  border: 10px solid rgb(238, 193, 108);
+  outline: none;
+  border-radius: 10px;
+  color: wheat;
+  background-size: cover;
+  text-shadow: black 0px 0px 5px;
+  /* background-position: cover; */
+}
+.pressed {
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-iteration-count: 2;
+  box-shadow: rgb(255, 247, 1) 0px 0px 10px 10px;
+}
+button:hover {
+  background-color: aqua;
+}
+footer {
+  margin-top: 40vh;
+}
+@keyframes example {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.w {
+  background-image: url("images/crash.png");
+}
+.a {
+  background-image: url("images/kick.png");
+}
+.s {
+  background-image: url("images/snare.png");
+}
+.d {
+  background-image: url("images/tom1.png");
+}
+.j {
+  background-image: url("images/tom2.png");
+}
+.k {
+  background-image: url("images/tom3.png");
+}
+.l {
+  background-image: url("images/tom4.png");
+}
